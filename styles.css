@@ -1,0 +1,54 @@
+body{
+	height: 100vh;
+	background-color: #424242;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	cursor: pointer;
+}
+
+.filters_select{
+	display: flex;
+	align-items: center;
+}
+
+.btn{
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+.btn:hover, .logo:hover{
+	transform: scale(1.1);
+}
+
+.color_Btn{
+	display:table-cell;
+	vertical-align:middle;
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+#jsBlue{
+	background-color: #3BB8FF;
+}
+
+#jsPink{
+	background-color: pink;
+}
+
+#jsYellow{
+	background-color: yellow;
+}
+
+.img_Btn{
+	width: 50px;
+	height: 50px;
+}
