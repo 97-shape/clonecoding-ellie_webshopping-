@@ -1,3 +1,3 @@
-const itemFilter = document.querySelector('#jsFilter');
-
-itemFilter.addEventListener('click')
+function loadItems(){
+	return fetch()
+}
