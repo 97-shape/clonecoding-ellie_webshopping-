@@ -5,7 +5,7 @@
       "gender": "female",
       "size": "large",
       "color": "pink",
-      "image": "../imgs/pink_t.png"
+      "image": "https://github.com/97-shape/clonecoding-ellie_webshopping-/blob/master/imgs/"
     },
     {
       "type": "pants",
