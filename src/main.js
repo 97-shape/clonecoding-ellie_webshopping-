@@ -19,9 +19,27 @@ function createHTMLString(item){
 `;
 	}
 
+function onClickFilter(event, items){
+	const filter = event.target.dataset;
+	const type = filter.type;
+	const value = filter.value;
+	
+	if(type == null || value == null){
+		return;
+	}
+	
+	displayItems(items.filter(item => item[type] === value));
+	
+}
+
+function addEventListener(items){
+	const filter = document.querySelector('.filters');
+	filter.addEventListener('click', event => onClickFilter(event, items))
+}
+
 loadItems()
 .then(items => {
-	console.log(items);
 	displayItems(items);
+	addEventListener(items);
 })
 .catch(console.log);
