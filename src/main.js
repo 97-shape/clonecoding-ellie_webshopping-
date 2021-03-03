@@ -1,12 +1,13 @@
 function loadItems() {
 	return fetch('https://raw.githubusercontent.com/97-shape/clonecoding-ellie_webshopping-/master/data/data.json')
-	.then (response => response.json)
-	.then (json => json.items);
+	.then(response => response.json())
+	.then(json => json.items);
 }
 
+
 function displayItems(items) {
-	const container = document.querySelector('.items');
-	container.innerHTML = items.map(item => createHTMLString(item)).join('');
+  const container = document.querySelector('.items');
+  container.innerHTML = items.map(item => createHTMLString(item)).join('');
 }
 
 function createHTMLString(item){
@@ -19,6 +20,8 @@ function createHTMLString(item){
 	}
 
 loadItems()
-.then (items => {
+.then(items => {
+	console.log(items);
 	displayItems(items);
 })
+.catch(console.log);
